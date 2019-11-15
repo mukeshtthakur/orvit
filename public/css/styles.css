@@ -37,67 +37,70 @@
   background-color: #43AB92;
 }
 
-.index-body{
-  font-family:  Calibri;
+
+.index-body {
+  font-family: Calibri;
   background-color: #43AB92;
   text-align: center;
   color: #fff;
 }
 
-.login-body{
+.login-body {
   font-family: Segoe UI, 'Montserrat', sans-serif;
-
-
 }
+
 input {
   outline: none;
- }
+}
 
-.onlyLoginBox h2{
+.onlyLoginBox h2 {
   color: #606175;
   font-size: 28px;
   font-weight: bold;
 }
 
-.onlyLoginBox p{
- font-size: 11px;
- font-weight: normal;
- color: #606175;
- margin-bottom: 15%;
+.onlyLoginBox p {
+  font-size: 11px;
+  font-weight: normal;
+  color: #606175;
+  margin-bottom: 15%;
 }
-.signIn{
-  text-align:right;
+
+.signIn {
+  text-align: right;
   font-size: 1em;
   position: absolute;
-  right:5%;
+  right: 5%;
   text-decoration: none;
   color: #fff;
   font-weight: bold;
 }
-.signUpText{
+
+.signUpText {
   color: #FF8000;
   text-decoration: none;
 }
-.onlyLoginBox input{
+
+.onlyLoginBox input {
   border: none;
   border-bottom: 1px solid #B3B3B3;
   width: 90%;
   margin: 0 auto;
 }
 
-
-.mainHeading{
+.mainHeading {
   width: 70%;
-  margin:10% auto 0 auto;
+  margin: 10% auto 0 auto;
   font-weight: bold;
   font-size: 50px;
 }
 
-.secondHeading{
+.secondHeading {
   font-weight: normal;
   margin-top: 40px;
 }
-.createYourBlog{
+
+.createYourBlog {
   margin: 40px auto 0 auto;
   padding: 15px 30PX;
   border-radius: 49px;
@@ -107,12 +110,13 @@ input {
   font-weight: bold;
   font-size: 15px;
 }
-p.termAndconditions{
+
+p.termAndconditions {
   font-size: 8px;
-  margin-bottom:0px;
+  margin-bottom: 0px;
 }
 
-.login-form a{
+.login-form a {
   text-align: right;
   margin-right: 5%;
   color: #A8A8A8;
@@ -122,7 +126,7 @@ p.termAndconditions{
   text-decoration: none;
 }
 
-.login-box{
+.login-box {
   margin: auto;
   color: #000;
   width: 25%;
@@ -133,14 +137,16 @@ p.termAndconditions{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border:none;
+  border: none;
   border-radius: 5px;
-  box-shadow:14px 14px #439A85;
+  box-shadow: 14px 14px #439A85;
 }
+
 .login-form input {
   display: block;
   margin-top: 7%;
 }
+
 .login-box button {
   display: block;
   width: 90%;
@@ -148,36 +154,35 @@ p.termAndconditions{
   font-size: 11px;
   border: none;
   border-radius: 2px;
-
-
-}
-.login-form button{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #5A6175;
-    color: #fff;
-    font-weight: 700;
-    margin-top: 10%;
 }
 
-.onlyLoginBox label{
+.login-form button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #5A6175;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 10%;
+}
+
+.onlyLoginBox label {
   display: block;
   margin: 4% auto;
   color: #A8A8A8;
 }
-label.signUpLabel{
+
+label.signUpLabel {
   margin-top: 3%;
 }
 
-
 .googleButton img {
-    position: absolute;
-    margin-left: -30px;
-    margin-top: -3px;
-    width: 20px;
+  position: absolute;
+  margin-left: -30px;
+  margin-top: -3px;
+  width: 20px;
 }
 
-.facebookButton i{
+.facebookButton i {
   position: absolute;
   margin-left: -25px;
   margin-top: -3px;
@@ -185,59 +190,213 @@ label.signUpLabel{
   color: #fff;
   font-size: 20px;
 }
+
 .signInButtons {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
 }
-button.facebookButton{
+
+button.facebookButton {
   margin-top: 6%;
   background-color: #48649F;
 }
-button.googleButton{
+
+button.googleButton {
   background-color: #FF8175;
 }
 
-
 @media (max-width: 1024px) {
-  .mainHeading{
+  .mainHeading {
     width: 90%;
     font-size: 40px;
   }
-
 }
+
 ::placeholder {
   color: #D1D1D1;
   opacity: 1;
 }
 
 @media (max-width:1100px) {
-  .login-box{
+  .login-box {
     width: 30%;
   }
-
 }
+
 @media (max-width:900px) {
-  .login-box{
+  .login-box {
     width: 40%;
   }
-
 }
+
 @media (max-width:700px) {
-  .login-box{
+  .login-box {
     width: 50%;
   }
+}
+
+@media (max-width:600px) {
+  .login-box {
+    width: 70%;
+  }
+}
+
+/* home */
+.homebody{
+  background-color: #f9f9f9;
+}
+.logoImage{
+  border-radius: 50%;
+}
+
+
+div.container{
+  max-width: 85%;
+}
+.logo-image{
+  height:80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.cover-image-div {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.cover-image {
+  height: 200px;
+  width: auto;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.profileIcon-div{
+    margin-top: 4%;
+
+}
+.profileIcon{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+
+}
+.nameText{
+  text-align: left;
+  margin-top: 6.2%;
+}
+.nameText span{
+  padding-left: 40px;
+}
+span.name{
+  font-size: 1.1em;
+  font-weight: bold;
+}
+span.userName{
+  font-size: 0.9em;
+  color: #AEAAAA;
+
+}
+
+.links{
+  margin-top: 4%;
+}
+.nav-link{
+  color: #000;
+}
+@media (max-width:1200px) {
+  .profileIcon{
+    height: 80px;
+    width: 80px;
+  }
+  .cover-image-div {
+   height: 175px;
+ }
+  img.cover-image {
+    height: 175px;
+
+}
+}
+@media (max-width:900px) {
+  .profileIcon{
+    height: 75px;
+    width: 75px;
+  }
+  span.name{
+    font-size: 1.0em;
+    font-weight: bold;
+  }
+  span.userName{
+    font-size: 0.8em;
+    color: #AEAAAA;
+
+  }
+  .cover-image-div {
+   height: 160px;
+ }
+  img.cover-image {
+    height: 160px;
+
+}
+
+}
+@media (max-width:750px) {
+  .profileIcon{
+    height: 60px;
+    width: 60px;
+  }
+  span.name{
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  span.userName{
+    font-size: 0.7em;
+    color: #AEAAAA;
+
+  }
+  .cover-image-div {
+   height: 150px;
+ }
+  img.cover-image {
+    height: 150px;
+
+}
 
 }
 @media (max-width:600px) {
-  .login-box{
-    width: 70%;
+  .profileIcon{
+    height: 55px;
+    width: 55px;
   }
+  span.name{
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  span.userName{
+    font-size: 0.7em;
+    color: #AEAAAA;
+
+  }
+  .cover-image-div {
+   height: 125px;
+ }
+  img.cover-image {
+    height: 125px;
 
 }
 
-/* homePage */
-.margins{
-  margin-top: 10px;
-  margin-bottom: 10px;
+}
+/* compose */
+
+.main-body{
+  width: 80%;
+  margin: 0 auto;
+}
+.form-body{
+  margin-top: 5%;
 }

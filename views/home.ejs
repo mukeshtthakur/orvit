@@ -1,17 +1,124 @@
-<%- include("partials/header"); -%>
 
-    <h1>Home</h1>
-    <p> <%=startingContent%> </p>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <title>ORVIT</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="homebody">
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites
+              or contact information.</p>
+          </div>
+          <div class="col-sm-3 offset-md-1 py-3">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="#" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-1 py-3">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img class="logoImage" src="/images/O.R.V.I.T_.png" height="60px" width=60px; alt="">
+          <strong>&nbsp O.R.V.I.T</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col cover-image-div">
+        <img class="cover-image" src="/images/landscape-two.jpg" alt="">
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-1 profileIcon-div">
+        <img class="profileIcon" src="/images/profileImage-one.jpg" alt="">
+      </div>
+      <div  class="nameText">
+        <span class="name" >Mukesh Thakur</span><br>
+        <span class="userName">@mukeshThakur</span>
+      </div>
+    </div>
+  </div>
+  <div class="container links">
+    <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">POSTS</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">UPLOADS</a>
+  </li>
 
 
-    <%posts.forEach(function(post){%>
-    <h1><%=post.title%></h1>
-    <p>
-      <%=post.content.substring(0, 100)+" ..."%>
-      <a href="/posts/<%=post._id%>">Read more</a>
-    </p>
+</ul>
 
-    <%});%>
+  </div>
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <%posts.forEach(function(post){%>
+           <div class="col-md-4">
+             <div class="card mb-4 shadow-sm">
+               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+               <div class="card-body">
+                 <h3 class="card-text"><%=post.title%></h3>
+                 <p class="card-text"><%=post.content.substring(0, 100)%></p>
+                 <div class="d-flex justify-content-between align-items-center">
+                   <div class="btn-group">
+                     <form action="/posts/<%=post._id%>" method="get">
+                       <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                     </form>
+
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <%});%>
+      </div>
+    </div>
+  </div>
 
 
-<%- include("partials/footer"); -%>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
+  </script>
+  <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+</body>
+
+</html>
