@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/89e903c498.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
+  </head>
+  <body class="index-body login-body">
+    <div class="login-box onlyLoginBox">
+      <h2>Log in</h2>
+      <p>NEW TO ORVIT? <a class="signUpText" href="/signup">&nbsp SIGN UP FOR FREE</a></p>
+      <form class="login-form" action="/login" method="post">
+        <input type="email" name="username" value="" placeholder="Email Address">
+        <input type="password" name="password" value="" placeholder="Password">
+        <a href="#">Forget Password?</a>
+        <button type="submit" name="logInButton">LOG IN</button>
+      </form>
+      <label>or</label>
+       <form action="/auth/google" method="get">
+          <button formaction="/auth/google" class="googleButton signInButtons" type="submit" name="button"><img src="images/search.svg" alt=""> LOG IN WITH GOOGLE</button>
+       </form>
+      <button class="facebookButton signInButtons"type="button" name="button"><i class="fab fa-facebook-square"></i> LOG IN WITH FACEBOOK</button>
+
+
+    </div>
+
+  </body>
+</html>

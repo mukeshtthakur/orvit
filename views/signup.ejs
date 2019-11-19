@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/89e903c498.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
+  </head>
+  <body class="index-body login-body">
+    <div class="login-box onlyLoginBox">
+      <h2>Sign Up</h2>
+      <p>Create unique and beautiful blog</p>
+      <form class="login-form" action="/signup" method="post">
+        <input type="text" name="" value="" placeholder="First Name">
+        <input type="text" name="" value="" placeholder="Last Name">
+        <input type="email" name="username" value="" placeholder="Email" autocomplete="off">
+        <input type="password" name="password" value="" placeholder="Password">
+        <input type="password" name="" value="" placeholder="Confirm Password">
+        <button type="submit" name="logInButton">SIGN UP</button>
+      </form>
+      <p class="termAndconditions">By clicking 'Sign Up' you are agreeing that you wish to receive periodic emails.</p>
+      <label class="signUpLabel">or</label>
+      <form action="/auth/google" method="get">
+         <button formaction="/auth/google" class="googleButton signInButtons" type="submit" name="button"><img src="images/search.svg" alt=""> LOG IN WITH GOOGLE</button>
+      </form>
+      <button class="facebookButton signInButtons"type="button" name="button"><i class="fab fa-facebook-square"></i> LOG IN WITH FACEBOOK</button>
+
+
+    </div>
+
+  </body>
+</html>
